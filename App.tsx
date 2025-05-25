@@ -70,6 +70,7 @@ const App: React.FC = () => {
   const grandTotalCost = subtotalCost + vatAmount;
 
   const handleDownloadQuote = useCallback(() => {
+    console.log('Attempting to download quote...'); // Log added
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
 
@@ -212,6 +213,7 @@ const App: React.FC = () => {
     }
 
     doc.save(`Preventivo_${safeProjectName}.pdf`);
+    console.log('doc.save() called.'); // Log added
 
   }, [
     clientName, projectName, projectCategory, projectDescription, items, totalHours, 
