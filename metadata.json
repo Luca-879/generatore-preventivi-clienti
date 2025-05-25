@@ -1,0 +1,5 @@
+{
+  "name": "Generatore Preventivi Cliente",
+  "description": "Un'applicazione web per creare, modificare e scaricare preventivi per clienti, calcolando i costi basati su una tariffa oraria e le ore stimate per varie attività.",
+  "requestFramePermissions": []
+}
